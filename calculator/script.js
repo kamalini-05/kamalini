@@ -1,7 +1,5 @@
-
-        let input = document.getElementById('inputBox');
+let input = document.getElementById('inputBox');
 let buttons = document.querySelectorAll('button');
-
 let string = "";
 let arr = Array.from(buttons);
 arr.forEach(button => {
@@ -10,7 +8,6 @@ arr.forEach(button => {
             string = eval(string);
             input.value = string;
         }
-
         else if(e.target.innerHTML == 'AC'){
             string = "";
             input.value = string;
@@ -22,7 +19,6 @@ arr.forEach(button => {
         else{
             string += e.target.innerHTML;
             input.value = string;
-        }
-        
+        }        
     })
 })
